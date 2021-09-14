@@ -19,17 +19,9 @@ try:
     from setuptools import setup, Extension
 except:
     from distutils import setup, Extension
-# for development
-# from Cython.Build import cythonize
-# ext_modules = cythonize('editdistance/bycython.pyx')
-
-ext_modules = [
-    Extension(
-        'editdistance.bycython',
-        ['editdistance/_editdistance.cpp', 'editdistance/bycython.cpp'],
-        include_dirs=['./editdistance'],
-    )
-]
+for development
+from Cython.Build import cythonize
+ext_modules = cythonize('editdistance/bycython.pyx')
 
 setup(
     name="editdistance",
