@@ -19,7 +19,7 @@ try:
     from setuptools import setup, Extension
 except:
     from distutils import setup, Extension
-for development
+
 from Cython.Build import cythonize
 ext_modules = cythonize('editdistance/bycython.pyx')
 
