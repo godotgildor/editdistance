@@ -32,6 +32,7 @@ setup(
     author_email='aflc0x@gmail.com',
     url='https://www.github.com/aflc/editdistance',
     ext_modules=ext_modules,
+    install_requires=['Cython'],
     packages=['editdistance'],
     package_data={'editdistance': ['_editdistance.h', 'def.h']},
     classifiers=[
